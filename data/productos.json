@@ -64,7 +64,7 @@
     },
     {
     "id": 10,
-    "nombre": "Mopa centrífuga con balde escurridor",
+    "nombre": "Mopa centrífuga con escurridor",
     "categoria": "accesorios",
     "precio": 22500,
     "img": "Img/accesorios/Mopa centrifuga balde escurridor.png"
@@ -134,14 +134,14 @@
     },
     {
     "id": 19,
-    "nombre": "Jabón en polvo x5 litros",
+    "nombre": "Jabón en polvo",
     "categoria": "lavado",
     "precio": 2000,
     "img": "Img/lavado/Jabon en polvo.png"
     },
     {
     "id": 20,
-    "nombre": "Agua lavandina concentrada 55g/Cl x5 litros",
+    "nombre": "Lavandina x5 litros",
     "categoria": "limpieza",
     "precio": 2900,
     "img": "Img/limpieza/agua lavandina.png"
@@ -162,21 +162,21 @@
     },
     {
     "id": 23,
-    "nombre": "Limpiador líquido desinfectante para pisos x5 litros",
+    "nombre": "Desinfectante para pisos x5 litros",
     "categoria": "limpieza",
     "precio": 3800,
-    "img": "Img/limpieza/desinfectante.png"
+    "img": "Img/limpieza/desinfectante pisos.png"
     },
     {
     "id": 24,
-    "nombre": "Detergente concentrado neutro 18% x5 litros",
+    "nombre": "Detergente neutro 18% x5 litros",
     "categoria": "limpieza",
     "precio": 6900,
     "img": "Img/limpieza/Detergente concentrado neutro 18.png"
     },
     {
     "id": 25,
-    "nombre": "Detergente concentrado neutro 30% x5 litros",
+    "nombre": "Detergente neutro 30% x5 litros",
     "categoria": "limpieza",
     "precio": 17900,
     "img": "Img/limpieza/Detergente concentrado neutro 30.png"
@@ -193,35 +193,35 @@
     "nombre": "Lavavajillas cremoso x5 litros",
     "categoria": "limpieza",
     "precio": 5500,
-    "img": "Img/limpieza/Lavavajillas cremoso"
+    "img": "Img/limpieza/Lavavajillas cremoso.png"
     },
     {
     "id": 28,
-    "nombre": "Limpiador líquido limpia vidrios x5 litros",
+    "nombre": "Líquido limpia vidrios x5 litros",
     "categoria": "limpieza",
     "precio": 5000,
-    "img": "Img/limpieza/Limpia vidrios"
+    "img": "Img/limpieza/Limpia vidrios.png"
     },
     {
     "id": 29,
     "nombre": "Neutralizador de olores",
     "categoria": "limpieza",
     "precio": 3850,
-    "img": "Img/limpieza/Neutralizador de olores"
+    "img": "Img/limpieza/Neutralizador de olores.png"
     },
     {
     "id": 30,
     "nombre": "Sanitizante en gel x5 litros",
     "categoria": "limpieza",
     "precio": 16500,
-    "img": "Img/limpieza/Sanitizante"
+    "img": "Img/limpieza/Sanitizante.png"
     },
     {
     "id": 31,
     "nombre": "2 Bobinas industriales 25cm x 400 mts",
     "categoria": "papeleria",
     "precio": 16500,
-    "img": "Img/papeleria/ 2 Bobinas industriales.png"
+    "img": "Img/papeleria/2 Bobinas industriales.png"
     },
     {
     "id": 32,
@@ -242,7 +242,7 @@
     "nombre": "Papel higiénico pack x8 rollos",
     "categoria": "papeleria",
     "precio": 16500,
-    "img": "Img/papeleria/ higiénico 8 rollos.png"
+    "img": "Img/papeleria/higiénico  8 rollos.png"
     },
     {
     "id": 35,
@@ -263,7 +263,7 @@
     "nombre": "Boya dosificadora",
     "categoria": "piscina",
     "precio": 6500,
-    "img": "Img/piscina/Boya dosificaodra.png"
+    "img": "Img/piscina/Boya dosificadora.png"
     },
     {
     "id": 38,
@@ -291,7 +291,7 @@
     "nombre": "Pastilla de cloro",
     "categoria": "piscina",
     "precio": 6500,
-    "img": "Img/piscina/Pastilla cloro.png"
+    "img": "Img/piscina/Pastillas cloro.png"
     },
     {
     "id": 42,

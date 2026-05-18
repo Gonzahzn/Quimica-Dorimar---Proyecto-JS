@@ -76,6 +76,7 @@ footer ul li {
 /* Inicio */
 .main__titulo--h1, .main__slogan{
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .main__combos--h2{
@@ -91,15 +92,30 @@ footer ul li {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: space-between; */
     align-items: center;
-    border: solid 1px #000;
+    border: solid 2px #000;
     background-color: white;
     border-radius: 8px;
     height: 15rem;
-    width: 10rem;
+    width: auto;
+    padding: 0.5rem;
 }
 .img {
     height: 7rem;
     width: auto;
+}
+
+.nombre_prod{
+  margin: 2px 0;
+  text-align: center;
+  min-height: 40px;
+  font-weight: 400;
+}
+.precio_prod{
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+.btn_agregar{
+  margin-top: auto;
 }

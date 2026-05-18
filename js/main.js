@@ -13,22 +13,29 @@ async function obtenerProductos(){
 };
 
 function crearCard(producto){
+    const col = document.createElement("div");
+    col.className = "col";
+
     const card = document.createElement("div");
     card.className = "card";
 
     const nombre = document.createElement("p");
     nombre.innerText = producto.nombre;
+    nombre.className = "nombre_prod";
 
     const img = document.createElement("img");
     img.src = producto.img;
     img.alt = "A";
     img.className = "img";
 
+
     const precio = document.createElement("p");
     precio.innerText = `$${producto.precio}`
+    precio.className = "precio_prod";
 
     const btn = document.createElement("button");
     btn.innerText = "Agregar al carrito";
+    btn.className = "btn_agregar";
     // btn.onclick = () => agregarAlCarrito(producto.id);
     // btn.className = "btn";
 
@@ -37,8 +44,10 @@ function crearCard(producto){
     card.appendChild(precio);
     card.appendChild(btn);
 
+    col.appendChild(card);
+
     let ctdProd = document.getElementById("contenedor-productos");
-    ctdProd.appendChild(card);
+    ctdProd.appendChild(col);
 }
 
 obtenerProductos();

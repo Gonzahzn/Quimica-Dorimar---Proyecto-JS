@@ -14,36 +14,47 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img class="header__logo" src="Img/Logo.png" alt="Logo Dorimar">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
+        <nav class="navbar navbar-expand-lg flex-column bg-body-tertiary">
+            <div class="container-fluid border-bottom pb-2">
+                 <div class="d-flex w-100 justify-content-between align-items-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="header__logo" src="Img/Logo.png" alt="Imagen del logo de Dorimar">
+                    </a>
+                    <form class="d-flex flex-grow-1 mx-4 d-lg-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Buscar..."/>
                         <button class="btn btn-outline-success" type="submit">Buscar...</button>
                     </form>
+                    <div class="d-flex align-items-center">
+                        <a class="nav-link mx-3" href="#">Iniciar sesión</a>
+                        <a class="nav-link mx-3" href="#">CARRITO</a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
                 </div>
-            </div>
+        </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
         </nav>
+    </header>
     </header>
 <main class="main">
     <h1 class="main__titulo--h1">Sobre nosotros</h1>
+    <p class="main__txt">Dorimar -Productos de limpieza- es una química ficticia vendedora de productos limpieza creada el 10/05/2026 con el fin de realizar una actividad 
+        práctica del curso de JavaScript dictado por CODERHOUSE. <br> 
+        Ninguna de las imagenes exhibidas son de mi autoría, todas provienen de internet. </p>
 </main>
 <footer>
     <ul>

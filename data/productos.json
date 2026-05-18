@@ -1,0 +1,310 @@
+[
+    {
+    "id": 1,
+    "nombre": "Balde plástico",
+    "categoria": "accesorios",
+    "precio": 3500,
+    "img": "Img/accesorios/balde plástico.png"
+    },
+        {
+    "id": 2,
+    "nombre": "Ballerina rollo",
+    "categoria": "accesorios",
+    "precio": 6900,
+    "img": "Img/accesorios/ballerina rollo.png"
+    },
+    {
+    "id": 3,
+    "nombre": "Bolsas de residuo x50, negras 80x110",
+    "categoria": "accesorios",
+    "precio": 9950,
+    "img": "Img/accesorios/bolsas residuos x50.png"
+    },    
+    {
+    "id": 4,
+    "nombre": "Cabo de madera",
+    "categoria": "accesorios",
+    "precio": 1350,
+    "img": "Img/accesorios/cabo madera.png"
+    },
+    {
+    "id": 5,
+    "nombre": "Cesto de basura a pedal",
+    "categoria": "accesorios",
+    "precio": 7500,
+    "img": "Img/accesorios/cesto basura.png"
+    },
+    {
+    "id": 6,
+    "nombre": "Escobillon",
+    "categoria": "accesorios",
+    "precio": 4800,
+    "img": "Img/accesorios/Escobillon.png"
+    },
+    {
+    "id": 7,
+    "nombre": "Esponja",
+    "categoria": "accesorios", 
+    "precio": 985,
+    "img": "Img/accesorios/Esponja.png"
+    },
+    {
+    "id": 8,
+    "nombre": "Guantes amarillos de latex reforzados",
+    "categoria": "accesorios",
+    "precio": 2750,
+    "img": "Img/accesorios/Guantes amarillos latex.png"
+    },        
+    {
+    "id": 9,
+    "nombre": "Guantes de latex descartables x100u",
+    "categoria": "accesorios",
+    "precio": 4800,
+    "img": "Img/accesorios/Guantes latex descartables.png"
+    },
+    {
+    "id": 10,
+    "nombre": "Mopa centrífuga con balde escurridor",
+    "categoria": "accesorios",
+    "precio": 22500,
+    "img": "Img/accesorios/Mopa centrifuga balde escurridor.png"
+    },
+    {
+    "id": 11,
+    "nombre": "Mopa blanca con rosca para cabo",
+    "categoria": "accesorios",
+    "precio": 3500,
+    "img": "Img/accesorios/Mopa con rosca.png"
+    },
+    {
+    "id": 12,
+    "nombre": "Pala plástica",
+    "categoria": "accesorios",
+    "precio": 5900,
+    "img": "Img/accesorios/Pala plástica.png"
+    },
+    {
+    "id": 13,
+    "nombre": "Paño multiuso tipo ballerina",
+    "categoria": "accesorios",
+    "precio": 550,
+    "img": "Img/accesorios/Paño multiuso.png"
+    },
+    {
+    "id": 14,
+    "nombre": "Rejilla",
+    "categoria": "accesorios",
+    "precio": 895,
+    "img": "Img/accesorios/Rejilla.png"
+    },
+    {
+    "id": 15,
+    "nombre": "Secador doble goma",
+    "categoria": "accesorios",
+    "precio": 4500,
+    "img": "Img/accesorios/Secador doble goma.png"
+    },
+    {
+    "id": 16,
+    "nombre": "Trapo de piso",
+    "categoria": "accesorios",
+    "precio": 1450,
+    "img": "Img/accesorios/balde plástico.png"
+    },
+    {
+    "id": 17,
+    "nombre": "Jabón líquido para ropa x5 litros",
+    "categoria": "lavado",
+    "precio": 6500,
+    "img": "Img/lavado/Jabon liq ropa.png"
+    },
+    {
+    "id": 18,
+    "nombre": "Suavizante para ropa x5 litros",
+    "categoria": "lavado",
+    "precio": 3500,
+    "img": "Img/lavado/Suavizante.png"
+    },
+    {
+    "id": 19,
+    "nombre": "Perfume para ropa x5 litros",
+    "categoria": "lavado",
+    "precio": 18500,
+    "img": "Img/lavado/perfume ropa.png"
+    },
+    {
+    "id": 19,
+    "nombre": "Jabón en polvo x5 litros",
+    "categoria": "lavado",
+    "precio": 2000,
+    "img": "Img/lavado/Jabon en polvo.png"
+    },
+    {
+    "id": 20,
+    "nombre": "Agua lavandina concentrada 55g/Cl x5 litros",
+    "categoria": "limpieza",
+    "precio": 2900,
+    "img": "Img/limpieza/agua lavandina.png"
+    },
+    {
+    "id": 21,
+    "nombre": "Aromatizantes Max Aroma",
+    "categoria": "limpieza",
+    "precio": 3000,
+    "img": "Img/limpieza/Aromatizantes maxAroma.png"
+    },
+    {
+    "id": 22,
+    "nombre": "Desengrasante x5 litros",
+    "categoria": "limpieza",
+    "precio": 9850,
+    "img": "Img/limpieza/desengrasante.png"
+    },
+    {
+    "id": 23,
+    "nombre": "Limpiador líquido desinfectante para pisos x5 litros",
+    "categoria": "limpieza",
+    "precio": 3800,
+    "img": "Img/limpieza/desinfectante.png"
+    },
+    {
+    "id": 24,
+    "nombre": "Detergente concentrado neutro 18% x5 litros",
+    "categoria": "limpieza",
+    "precio": 6900,
+    "img": "Img/limpieza/Detergente concentrado neutro 18.png"
+    },
+    {
+    "id": 25,
+    "nombre": "Detergente concentrado neutro 30% x5 litros",
+    "categoria": "limpieza",
+    "precio": 17900,
+    "img": "Img/limpieza/Detergente concentrado neutro 30.png"
+    },
+    {
+    "id": 26,
+    "nombre": "Detergete limón x5 litros",
+    "categoria": "limpieza",
+    "precio": 3200,
+    "img": "Img/limpieza/Detergente limón.png"
+    },
+    {
+    "id": 27,
+    "nombre": "Lavavajillas cremoso x5 litros",
+    "categoria": "limpieza",
+    "precio": 5500,
+    "img": "Img/limpieza/Lavavajillas cremoso"
+    },
+    {
+    "id": 28,
+    "nombre": "Limpiador líquido limpia vidrios x5 litros",
+    "categoria": "limpieza",
+    "precio": 5000,
+    "img": "Img/limpieza/Limpia vidrios"
+    },
+    {
+    "id": 29,
+    "nombre": "Neutralizador de olores",
+    "categoria": "limpieza",
+    "precio": 3850,
+    "img": "Img/limpieza/Neutralizador de olores"
+    },
+    {
+    "id": 30,
+    "nombre": "Sanitizante en gel x5 litros",
+    "categoria": "limpieza",
+    "precio": 16500,
+    "img": "Img/limpieza/Sanitizante"
+    },
+    {
+    "id": 31,
+    "nombre": "2 Bobinas industriales 25cm x 400 mts",
+    "categoria": "papeleria",
+    "precio": 16500,
+    "img": "Img/papeleria/ 2 Bobinas industriales.png"
+    },
+    {
+    "id": 32,
+    "nombre": "Pack de 8 Rollo Cocina",
+    "categoria": "papeleria",
+    "precio": 13500,
+    "img": "Img/papeleria/8 Rollo Cocina.png"
+    },
+    {
+    "id": 33,
+    "nombre": "Pack por 30 rollos de papel higiénico",
+    "categoria": "papeleria",
+    "precio": 17500,
+    "img": "Img/papeleria/30 rollos de papel higiénico.png"
+    },
+    {
+    "id": 34,
+    "nombre": "Papel higiénico pack x8 rollos",
+    "categoria": "papeleria",
+    "precio": 16500,
+    "img": "Img/papeleria/ higiénico 8 rollos.png"
+    },
+    {
+    "id": 35,
+    "nombre": "Toalla intercalada x2500u",
+    "categoria": "papeleria",
+    "precio": 14800,
+    "img": "Img/papeleria/Toalla intercalada 2500u.png"
+    },
+    {
+    "id": 36,
+    "nombre": "Alguicida x5 litros",
+    "categoria": "piscina",
+    "precio": 15000,
+    "img": "Img/piscina/Alguicida.png"
+    },
+    {
+    "id": 37,
+    "nombre": "Boya dosificadora",
+    "categoria": "piscina",
+    "precio": 6500,
+    "img": "Img/piscina/Boya dosificaodra.png"
+    },
+    {
+    "id": 38,
+    "nombre": "Clarificador Floculante Coagulante",
+    "categoria": "piscina",
+    "precio": 15000,
+    "img": "Img/piscina/Clarificador Floculante Coagulante.png"
+    },
+    {
+    "id": 39,
+    "nombre": "Elevador de ph x5 litros",
+    "categoria": "piscina",
+    "precio": 13500,
+    "img": "Img/piscina/Elevador de ph.png"
+    },
+    {
+    "id": 40,
+    "nombre": "Limpiafondos cepillo curvo",
+    "categoria": "piscina",
+    "precio": 5500,
+    "img": "Img/piscina/Limpiafondos.png"
+    },
+    {
+    "id": 41,
+    "nombre": "Pastilla de cloro",
+    "categoria": "piscina",
+    "precio": 6500,
+    "img": "Img/piscina/Pastilla cloro.png"
+    },
+    {
+    "id": 42,
+    "nombre": "Reductor de ph",
+    "categoria": "piscina",
+    "precio": 7900,
+    "img": "Img/piscina/Reductor pH.png"
+    },
+    {
+    "id": 43,
+    "nombre": "Saca hojas",
+    "categoria": "piscina",
+    "precio": 4500,
+    "img": "Img/piscina/Saca hojas.png"
+    }
+]

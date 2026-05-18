@@ -50,3 +50,56 @@ nav {
   color: #000;
   text-decoration: underline;
 }
+
+.footer{
+  /* margin-top: 50px; */
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  margin: 0 10px;
+  padding: 40px 10px 10px 10px;
+  font-size: 20px;
+}
+.footer__redes a {
+  color: black;
+}
+.footer__redes:hover a {
+  color: brown;
+}
+
+/* Inicio */
+.main__titulo--h1, .main__slogan{
+  margin-top: 25px;
+}
+
+.main__combos--h2{
+  margin-top: 50px;
+}
+
+
+
+
+
+/* ///////// */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #000;
+    background-color: white;
+    border-radius: 8px;
+    height: 15rem;
+    width: 10rem;
+}
+.img {
+    height: 7rem;
+    width: auto;
+}

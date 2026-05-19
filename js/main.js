@@ -50,5 +50,27 @@ function crearCard(producto){
     ctdProd.appendChild(col);
 }
 
+const botonesFiltro = document.querySelectorAll(".btn-filtro");
+
+function filtrarProductos(categoriaFiltro){
+    let ctdProductos = document.getElementById("contenedor-productos");
+    ctdProductos.innerHTML = "";
+
+    if(categoriaFiltro === "todos"){
+        productos.forEach(prod => crearCard(prod));
+    }
+    else{
+        const prodFiltrados = productos.filter(prod => prod.categoria === categoriaFiltro);
+        prodFiltrados.forEach(prod => crearCard(prod));
+    }
+}
+botonesFiltro.forEach(boton => {
+    boton.addEventListener("click", (e) =>{
+        e.preventDefault();
+        const categoria = e.target.dataset.categoria;
+        filtrarProductos(categoria);
+    });
+});
+
 obtenerProductos();
 

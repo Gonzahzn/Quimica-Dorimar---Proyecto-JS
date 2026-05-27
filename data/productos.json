@@ -15,7 +15,7 @@
     },
     {
     "id": 3,
-    "nombre": "Bolsas de residuo x50, negras 80x110",
+    "nombre": "Bolsas de residuo 50 unidades",
     "categoria": "accesorios",
     "precio": 9950,
     "img": "Img/accesorios/bolsas residuos x50.png"
@@ -306,5 +306,26 @@
     "categoria": "piscina",
     "precio": 4500,
     "img": "Img/piscina/Saca hojas.png"
+    },
+    {
+    "id": 44,
+    "nombre": "Mopa centrifuga + Detergente 30% + Lavandina + Desinf. pisos",
+    "categoria": "combos",
+    "precio": 33900,
+    "img": "Img/combos/Combo 1.png"
+    },
+    {
+    "id": 45,
+    "nombre": "Desinf. pisos + Lavandina + Papel Higienico + Ballerina Rollo + Guantes Amarillos",
+    "categoria": "combos",
+    "precio": 46300,
+    "img": "Img/combos/Combo 2.png"
+    },  
+    {
+    "id": 46,
+    "nombre": "Desinf. pisos + Lavandina + Detergente 18% + Bolsas residuo + Ballerina + Esponja",
+    "categoria": "combos",
+    "precio": 31500,
+    "img": "Img/combos/Combo 3.png"
     }
 ]

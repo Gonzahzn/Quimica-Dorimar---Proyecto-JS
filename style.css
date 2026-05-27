@@ -116,9 +116,6 @@ footer ul li {
   margin-bottom: 1px;
   font-weight: 600;
 }
-.btn_agregar{
-  margin-top: auto;
-}
 
 
 .btn {
@@ -136,12 +133,44 @@ footer ul li {
     transform: scale(1.025);
 }
 
-.btn .btn_modificar{
-  padding: 0.1rem 0.4rem;
-  font-size: 0.85rem;
-  background-color: #f0f0f0;
-  color: #000;
+.btn.btn_agregar{
+  color: #ffffff;
+  margin-top: auto;
 }
+.btn.btn_agregar:hover{
+  background-color: #767575;
+}
+
+.btn.btn_modificar{
+  /* padding: 0.1rem 0.4rem;
+  font-size: 0.85rem; */
+  /* background-color: rgb(87, 130, 170); */
+  color: #ffffff;
+}
+.btn.btn_modificar:hover{
+  background-color: #767575;
+}
+
+.btn.btn_eliminar{
+  /* background-color: rgb(87, 130, 170); */
+  color: #ffffff
+}
+.btn.btn_eliminar:hover{
+  background-color: #767575;
+  /* transform: scale(1.025); */
+}
+
+.btn.btn_catalogo{
+  color: #ffffff
+}
+.btn.btn.btn_catalogo:hover{
+  background-color: #767575;
+}
+
+
+
+
+
 
 
 

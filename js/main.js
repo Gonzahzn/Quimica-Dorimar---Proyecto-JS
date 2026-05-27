@@ -210,7 +210,7 @@ function crearCard(producto){
 
     const btn = document.createElement("button");
     btn.innerText = "Agregar al carrito";
-    btn.className = "btn_agregar";
+    btn.className = "btn btn_agregar";
     btn.onclick = () => agregarCarrito(producto.id);
     // btn.className = "btn";
 

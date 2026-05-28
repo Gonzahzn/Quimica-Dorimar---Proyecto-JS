@@ -6,16 +6,10 @@
 }
 
 body {
-  /* background-image: radial-gradient(circle, #B0FFFA, #093C5D); */
   text-align: center;
 }
 
 header {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  /* background-image: url(Img/banner.png); */
-  /* padding: 5px 0; */
   margin-bottom: 10px;
   width: 100%;
 }
@@ -26,20 +20,11 @@ header {
 }
 
 nav {
-  /* display: flex; */
-  /* background-image: radial-gradient(circle, #B0FFFA, #093C5D); */
-  background-image: url(Img/banner.png);
+  background-image: url(Img/Banner2.png);
   background-size: cover;
   background-position: center;
-  /* margin: 0 15px; */
-  /* padding: 15px !important; */
-  /* border-radius: 20px; */
 }
 
-/* nav ul li {
-  margin: 0 10px;
-  font-size: 15px;
-} */
 .navbar-nav .nav-link{
   color: #093C5D;
   font-weight: 700;
@@ -68,36 +53,37 @@ footer ul li {
 }
 .footer__redes a {
   color: black;
+  font-size: 25px;
 }
 .footer__redes:hover a {
-  color: brown;
+  color: rgb(87, 130, 170);;
 }
 
-/* Inicio */
+/* Inicio / Productos*/
 .main__titulo--h1, .main__slogan{
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-.main__combos--h2{
-  margin-top: 50px;
+.main__slogan{
+  font-size: 20px;
 }
 
+.main__catalogo{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
 
-
-
-
-/* ///////// */
+/* Cards para productos */
 
 .card {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
     border: solid 2px #000;
     background-color: white;
     border-radius: 8px;
-    height: 16rem;
+    height: 17rem;
     width: auto;
     padding: 0.5rem;
 }
@@ -117,7 +103,7 @@ footer ul li {
   font-weight: 600;
 }
 
-
+/* Estetica botones */
 .btn {
     border-radius: 8px;
     border: solid 2px #000;
@@ -150,7 +136,6 @@ footer ul li {
 }
 
 .btn.btn_eliminar{
-  /* background-color: rgb(87, 130, 170); */
   color: #ffffff
 }
 .btn.btn_eliminar:hover{
@@ -164,7 +149,7 @@ footer ul li {
   background-color: #767575;
 }
 
-
+/* Producto no hallado en busqueda */
 .prod_noHallado{
   width: 100%;
   text-align: center;

@@ -1,16 +1,53 @@
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
 let productos = [];
 
+//Código para productos/carrito
 async function obtenerProductos(){
     const response = await fetch("./data/productos.json");
     const data = await response.json(); 
     productos = data;
     productos.forEach(producto => {
         crearCard(producto);
-        
     });
 };
+
+
+function crearCard(producto){
+    const col = document.createElement("div");
+    col.className = "col";
+
+    const card = document.createElement("div");
+    card.className = "card";
+
+    const nombre = document.createElement("p");
+    nombre.innerText = producto.nombre;
+    nombre.className = "nombre_prod";
+
+    const img = document.createElement("img");
+    img.src = producto.img;
+    img.alt = "Imagen de producto";
+    img.className = "img";
+
+
+    const precio = document.createElement("p");
+    precio.innerText = `$${producto.precio}`
+    precio.className = "precio_prod";
+
+    const btn = document.createElement("button");
+    btn.innerText = "Agregar al carrito";
+    btn.className = "btn btn_agregar";
+    btn.onclick = () => agregarCarrito(producto.id);
+
+    card.appendChild(img);
+    card.appendChild(nombre);
+    card.appendChild(precio);
+    card.appendChild(btn);
+    col.appendChild(card);
+
+    let ctdProd = document.getElementById("contenedor_productos");
+    ctdProd.appendChild(col);
+}
+
 
 function agregarCarrito(idCompra){
     const prodFinal = productos.find(prod => prod.id === idCompra);
@@ -32,14 +69,9 @@ function agregarCarrito(idCompra){
             carrito.push({...prodFinal, cantidad: 1});
         }
         localStorage.setItem("carrito", JSON.stringify(carrito));
-
         verEnCarrito();
-
         dispararAlerta("Producto agregado", `Sumaste ${prodFinal.nombre} al carrito`);
     }
-    else{
-        alert("Ese prod no está en tu catálgoo")
-    };
 };
 
 function verEnCarrito(){
@@ -109,11 +141,9 @@ function verEnCarrito(){
     })
 
     const precioFinal = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
-
     const fila_precioFinal = document.createElement("div");
     fila_precioFinal.className = "d-flex justify-content-end mt-4 pt-2 fw-semibold";
     fila_precioFinal.innerText = `Total: $${precioFinal}`;
-
     contenedor_carrito.appendChild(fila_precioFinal);
 }
 
@@ -161,43 +191,8 @@ function vaciarCarrito() {
     };
 };
 
-function crearCard(producto){
-    const col = document.createElement("div");
-    col.className = "col";
 
-    const card = document.createElement("div");
-    card.className = "card";
-
-    const nombre = document.createElement("p");
-    nombre.innerText = producto.nombre;
-    nombre.className = "nombre_prod";
-
-    const img = document.createElement("img");
-    img.src = producto.img;
-    img.alt = "Imagen de producto";
-    img.className = "img";
-
-
-    const precio = document.createElement("p");
-    precio.innerText = `$${producto.precio}`
-    precio.className = "precio_prod";
-
-    const btn = document.createElement("button");
-    btn.innerText = "Agregar al carrito";
-    btn.className = "btn btn_agregar";
-    btn.onclick = () => agregarCarrito(producto.id);
-
-    card.appendChild(img);
-    card.appendChild(nombre);
-    card.appendChild(precio);
-    card.appendChild(btn);
-
-    col.appendChild(card);
-
-    let ctdProd = document.getElementById("contenedor_productos");
-    ctdProd.appendChild(col);
-}
-
+//Código de filtrado y busqueda de productos
 const botonesFiltro = document.querySelectorAll(".btn_filtro");
 
 function filtrarProductos(categoriaFiltro){
@@ -251,6 +246,7 @@ if(barraBusqueda && inputBusq){
     });
 }
 
+//Botones para vaciar carrito y finalizar compra de carrito
 const vaciar = document.getElementById("btn_vaciar");
 if(vaciar){
     vaciar.onclick = () => {
@@ -266,6 +262,7 @@ if(btn_finalizar){
     }
 }
 
+//Mensaje de exito de procesos
 function dispararAlerta(titulo, mensaje, icono){
     Swal.fire({
         title: titulo,

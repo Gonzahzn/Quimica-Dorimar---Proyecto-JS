@@ -1,15 +1,22 @@
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 let productos = [];
-
+// fjsdfjkdfj
 //Código para productos/carrito
 async function obtenerProductos(){
-    const response = await fetch("./data/productos.json");
-    const data = await response.json(); 
-    productos = data;
-    productos.forEach(producto => {
-        crearCard(producto);
-    });
-};
+    try{
+        const response = await fetch("./data/productos.json");
+        if(!response.ok) throw new Error ("Falló la conexion");
+
+        productos = await response.json(); 
+        productos.forEach(producto => crearCard(producto));
+    } catch(error){
+        Swal.fire({
+            title: "Error de conexíon",
+            text: "Error al cargar el catálogo. Intentelo más tarde",
+            icon: "error"
+        });
+    }
+}
 
 
 function crearCard(producto){

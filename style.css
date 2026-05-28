@@ -134,6 +134,7 @@ footer ul li {
 }
 
 .btn.btn_agregar{
+  background-color: rgb(87, 130, 170);
   color: #ffffff;
   margin-top: auto;
 }
@@ -142,9 +143,6 @@ footer ul li {
 }
 
 .btn.btn_modificar{
-  /* padding: 0.1rem 0.4rem;
-  font-size: 0.85rem; */
-  /* background-color: rgb(87, 130, 170); */
   color: #ffffff;
 }
 .btn.btn_modificar:hover{
@@ -157,11 +155,10 @@ footer ul li {
 }
 .btn.btn_eliminar:hover{
   background-color: #767575;
-  /* transform: scale(1.025); */
 }
 
 .btn.btn_catalogo{
-  color: #ffffff
+  color: #ffffff;
 }
 .btn.btn.btn_catalogo:hover{
   background-color: #767575;

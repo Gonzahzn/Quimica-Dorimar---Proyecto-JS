@@ -168,57 +168,10 @@ footer ul li {
 }
 
 
-
-
-
-
-
-
-/* ///carrito */
-/* .col_fila{
-  display: grid;
-  grid-template-columns: 45% 20% 25% 10%;
-  align-items: center;
-  padding: 0.75rem 0;
-  border-bottom: 1px solid #e0e0e0;
-  gap: 0.5rem;
-}
-
-.carrito_nombre{
-  text-align: left;
-}
-
-.carrito_prod{
-  margin: 0;
-  font-weight: 500;
-  color: #333;
-}
-
-.carrito_cantidad{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carrito_cantidades{
-  font-weight: 700;
-  margin: 0 0.5rem;
-  min-width: 20px;
+.prod_noHallado{
+  width: 100%;
   text-align: center;
+  padding-right: 160px;
+  margin-top: 40px;
+  font-weight: 500;
 }
-
-.carrito_precio{
-  text-align: right;
-  padding-right: 0.5rem;
-}
-
-.carrito_tota{  
-  margin: 0;
-  font-weight: 600;
-  color: #111;
-}
-
-.carrito_eliminar{
-  display: flex;
-  justify-content: flex-end;
-} */

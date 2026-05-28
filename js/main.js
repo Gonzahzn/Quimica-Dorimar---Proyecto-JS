@@ -247,6 +247,39 @@ botonesFiltro.forEach(boton => {
     });
 });
 
+function buscarProducto(txtBusqueda){
+    let contenedor_prod = document.getElementById("contenedor_productos");
+    contenedor_prod.innerHTML = "";
+
+    const buscado = txtBusqueda.toLowerCase();
+
+    const result = productos.filter(prod => prod.nombre.toLowerCase().includes(buscado));
+
+    if(result.length > 0){
+        result.forEach(prod => crearCard(prod));
+    }
+    else{
+        contenedor_prod.innerHTML = 
+        `<div class="prod_noHallado">
+            <p class="noExiste">Este producto no se encuentra disponible</p>
+        </div>`;
+    }
+}
+
+
+const barraBusqueda = document.getElementById("barra_busqueda");
+const inputBusq = document.getElementById("busqueda");
+
+if(barraBusqueda && inputBusq){
+    barraBusqueda.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const valorBusq = inputBusq.value;
+        buscarProducto(valorBusq);
+    });
+}
+
+
+
 const vaciar = document.getElementById("btn_vaciar");
 if(vaciar){
     vaciar.onclick = () => {

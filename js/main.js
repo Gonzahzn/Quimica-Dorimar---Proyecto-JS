@@ -1,6 +1,6 @@
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 let productos = [];
-// fjsdfjkdfj
+
 //Código para productos/carrito
 async function obtenerProductos(){
     try{
@@ -17,42 +17,24 @@ async function obtenerProductos(){
         });
     }
 }
-
-
 function crearCard(producto){
     const col = document.createElement("div");
     col.className = "col";
 
-    const card = document.createElement("div");
-    card.className = "card";
-
-    const nombre = document.createElement("p");
-    nombre.innerText = producto.nombre;
-    nombre.className = "nombre_prod";
-
-    const img = document.createElement("img");
-    img.src = producto.img;
-    img.alt = "Imagen de producto";
-    img.className = "img";
-
-
-    const precio = document.createElement("p");
-    precio.innerText = `$${producto.precio}`
-    precio.className = "precio_prod";
-
-    const btn = document.createElement("button");
-    btn.innerText = "Agregar al carrito";
-    btn.className = "btn btn_agregar";
-    btn.onclick = () => agregarCarrito(producto.id);
-
-    card.appendChild(img);
-    card.appendChild(nombre);
-    card.appendChild(precio);
-    card.appendChild(btn);
-    col.appendChild(card);
+    col.innerHTML = `
+        <div class= "card">
+            <img src="${producto.img}" alt="Imagen de ${producto.nombre}" class="img">
+            <p class="nombre_prod">${producto.nombre}</p>
+            <p class="precio_prod">$${producto.precio}</p>
+            <button class="btn btn_agregar" id="btn-add-${producto.id}">Agregar al carrito</button>
+        </div>`;
 
     let ctdProd = document.getElementById("contenedor_productos");
-    ctdProd.appendChild(col);
+    if(ctdProd){
+        ctdProd.appendChild(col);
+        document.getElementById(`btn-add-${producto.id}`).onclick = () => agregarCarrito(producto.id);
+    }
+
 }
 
 
@@ -93,59 +75,28 @@ function verEnCarrito(){
         const fila_compra = document.createElement("div");
         fila_compra.className = "row align-items-center mb-1 pb-2 text-start";
 
-        const nombre = document.createElement("div");
-        nombre.className = "col-6";
-
-        const info_pedido = document.createElement("p");
-        info_pedido.className = "m-0";
-        info_pedido.innerHTML = `${elemento.nombre}`;
-        nombre.appendChild(info_pedido);
-
-        const modificador_cant = document.createElement("div");
-        modificador_cant.className = "col-2 d-flex align-items-center justify-content-center";
-
-        const menos = document.createElement("button");
-        menos.className = "btn btn_modificar";
-        menos.innerText = "-";
-        menos.onclick = () => restarCantidad(elemento.id);
-
-        const mas = document.createElement("button");
-        mas.className = "btn btn_modificar";
-        mas.innerText = "+";
-        mas.onclick = () => sumarCantidad(elemento.id);
-
-        const cantidad_prod = document.createElement("span");
-        cantidad_prod.className = "cantidades_prod mx-1";
-        cantidad_prod.innerText = elemento.cantidad;
-
-        modificador_cant.appendChild(menos);
-        modificador_cant.appendChild(cantidad_prod);
-        modificador_cant.appendChild(mas);
-
-        const precio = document.createElement("div");
-        precio.className = "col-3 text-end";
-
-        const totalProd = document.createElement("p");
-        totalProd.className = "precioProd m-0";
-        totalProd.innerText = `Total: $${elemento.precio * elemento.cantidad}`;
-        precio.appendChild(totalProd);
-
-        const eliminar = document.createElement("div");
-        eliminar.className = "col-1 text-end";
-
-        const btn_eliminar = document.createElement("button");
-        btn_eliminar.className = "btn btn_eliminar";
-        btn_eliminar.innerText = "X";
-        btn_eliminar.onclick = () => eliminarProducto(elemento.id);
-        eliminar.appendChild(btn_eliminar);
-
-        fila_compra.appendChild(nombre);
-        fila_compra.appendChild(modificador_cant);
-        fila_compra.appendChild(precio);
-        fila_compra.appendChild(eliminar);
+        fila_compra.innerHTML = `
+            <div class="col-5">
+                <p class="m-0">${elemento.nombre}</p>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="btn btn_modificar" id="btn-restar-${elemento.id}">-</button>
+                <span class="cantidades_prod mx-1">${elemento.cantidad}</span>
+                <button class="btn btn_modificar" id="btn-sumar-${elemento.id}">+</button>
+            </div>
+            <div class="col-3 text-end">
+                <p class="precioProd m-0"> $${elemento.precio * elemento.cantidad}</p>
+            </div>
+            <div class="col-1 text-end">
+                <button class="btn btn-eliminar" id="btn-eliminar-${elemento.id}">X</button>
+            </div>`;
 
         contenedor_carrito.appendChild(fila_compra);
-    })
+
+        document.getElementById(`btn-restar-${elemento.id}`).onclick = () => restarCantidad(elemento.id);
+        document.getElementById(`btn-sumar-${elemento.id}`).onclick = () => sumarCantidad(elemento.id);
+        document.getElementById(`btn-eliminar-${elemento.id}`).onclick = () => eliminarProducto(elemento.id);
+    });
 
     const precioFinal = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
     const fila_precioFinal = document.createElement("div");
@@ -275,7 +226,8 @@ function dispararAlerta(titulo, mensaje, icono){
         title: titulo,
         text: mensaje,
         icon: "success",
-        draggable: true,
+        // draggable: true,
+        timer:1500
     })
 }
 
